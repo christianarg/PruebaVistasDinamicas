@@ -1,0 +1,8 @@
+﻿@model PruebaVistasDinamicas.Controllers.TemplateCodeModel
+
+@using (Html.BeginForm("EditView","Home"))
+{
+    @Html.TextAreaFor(m => m.Code, new {cols= 100, rows = 20})
+
+    <button>Guardar</button>
+}
