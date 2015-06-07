@@ -11,3 +11,7 @@ es que estas vistas no tienen acceso a toda la configuración del /Views/Web.Con
 
 Esta prueba se basa en la idea de ahorrarnos todas estas complicaciones escribiendo la vista directamente a disco
 para que luego Razor la procese "normalmente"
+
+Lo interestante está en el Global.asax, donde simplemente extiendo el RazorViewEngine para crear dinámicamente el fichero cuando la vista que nos piden está en una carpeta por convención.
+
+El HomeController usa esa vista y nos da un muy simple (y cutre) editor
